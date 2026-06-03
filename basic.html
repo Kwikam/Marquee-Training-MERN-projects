@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Box Layout</title>
+    <style>
+        /* Main box */
+        .big-box {
+            width: 500px;
+            background: lightgray;
+            padding: 20px;
+            margin: 50px auto;
+        }
+        
+        /* Top rectangle */
+        .top {
+            height: 80px;
+            background: blue;
+            margin-bottom: 20px;
+        }
+        
+        /* Center two boxes */
+        .center {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .left {
+            flex: 1;
+            height: 150px;
+            background: red;
+        }
+        
+        .right {
+            flex: 1;
+            height: 150px;
+            background: orange;
+        }
+        
+        /* Bottom shapes */
+        .bottom {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .square {
+            width: 80px;
+            height: 80px;
+            background: green;
+        }
+        
+        .circle {
+            width: 80px;
+            height: 80px;
+            background: purple;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="big-box">
+    <div class="top"></div>
+    
+    <div class="center">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    
+    <div class="bottom">
+        <div class="square"></div>
+        <div class="circle"></div>
+        <div class="square"></div>
+        <div class="circle"></div>
+    </div>
+</div>
+
+</body>
+</html>

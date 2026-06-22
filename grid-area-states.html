@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>States Grid</title>
+    <style> 
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "header header"
+            "main"
+            "footer footer";
+            gap: 10px;
+            height: 100vh;
+            padding: 20px;
+        }
+        
+        /* Styling just to see the boxes clearly */
+        .container > div {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+        .kashmir {
+            grid-area: header;
+            background-color: #e74c3c;
+        }
+        
+        .madhyapradesh {
+            grid-area: header;
+            background-color: #2ecc71;
+        }
+        
+        .rajasthan {
+            grid-area: main;
+            background-color: #f39c12;
+        }
+        
+        .bihar {
+            grid-area: footer;
+            background-color: #9b59b6;
+        }
+        
+        .uttarpradesh {
+            grid-area: footer;
+            background-color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kashmir">
+            <h1>Kashmir</h1>
+        </div>
+        <div class="madhyapradesh">
+            <h1>Madhya Pradesh</h1>
+        </div>
+        <div class="rajasthan">
+            <h1>Rajasthan</h1>
+        </div>
+        <div class="bihar">
+            <h1>Bihar</h1>
+        </div>
+        <div class="uttarpradesh">
+            <h1>Uttar Pradesh</h1>
+        </div>
+    </div>
+</body>
+</html>

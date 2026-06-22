@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate - Transform Examples</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .container {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .box {
+            width: 150px;
+            height: 150px;
+            background: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            
+            /* TRANSITION - smooth rotation */
+            transition: all 0.8s ease;
+        }
+        
+        /* 1. ROTATE - normal rotation */
+        .rotate:hover {
+            transform: rotate(180deg);
+            background: #e74c3c;
+        }
+        
+        /* 2. ROTATE X - flips horizontally */
+        .rotateX:hover {
+            transform: rotateX(180deg);
+            background: #2ecc71;
+        }
+        
+        /* 3. ROTATE Y - flips vertically */
+        .rotateY:hover {
+            transform: rotateY(180deg);
+            background: #f39c12;
+        }
+        
+        /* 4. ROTATE with different degrees */
+        .rotate-45:hover {
+            transform: rotate(45deg);
+            background: #9b59b6;
+        }
+        
+        /* 5. ROTATE - full circle */
+        .rotate-360:hover {
+            transform: rotate(360deg);
+            background: #1abc9c;
+        }
+        
+        /* 6. Multiple rotations combined */
+        .rotate-multiple:hover {
+            transform: rotateX(45deg) rotateY(45deg) rotate(45deg);
+            background: #e67e22;
+        }
+        
+        .label {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .box-wrapper {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rotation Examples</h1>
+    <h3>Hover over each box to see the rotation effect</h3>
+    
+    <div class="container">
+        <div class="box-wrapper">
+            <div class="box rotate">ROTATE<br>(180°)</div>
+            <div class="label">transform: rotate(180deg)</div>
+        </div>
+        
+        <div class="box-wrapper">
+            <div class="box rotateX">ROTATE X<br>(Flips down)</div>
+            <div class="label">transform: rotateX(180deg)</div>
+        </div>
+        
+        <div class="box-wrapper">
+            <div class="box rotateY">ROTATE Y<br>(Flips right)</div>
+            <div class="label">transform: rotateY(180deg)</div>
+        </div>
+        
+        <div class="box-wrapper">
+            <div class="box rotate-45">ROTATE<br>(45°)</div>
+            <div class="label">transform: rotate(45deg)</div>
+        </div>
+        
+        <div class="box-wrapper">
+            <div class="box rotate-360">ROTATE<br>(Full circle)</div>
+            <div class="label">transform: rotate(360deg)</div>
+        </div>
+        
+        <div class="box-wrapper">
+            <div class="box rotate-multiple">MULTIPLE<br>(3D rotation)</div>
+            <div class="label">rotateX + rotateY + rotate</div>
+        </div>
+    </div>
+</body>
+</html>

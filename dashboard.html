@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 80px 1fr 100px;
+        gap: 10px;
+        height: 100vh;
+    }
+    .sidebar{
+        background-color: #333;
+        color: white;
+        padding: 20px;
+    }
+    .sidebar h2{
+        margin-top: 0;
+    }
+    .sidebar ul{
+        list-style: none;
+        padding: 0;
+    }
+    .sidebar ul li{
+        margin: 15px 0;
+    }
+    .Header{
+        background-color: #555;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .search input{
+        padding: 5px;
+        font-size: 16px;
+    }
+    .Mainbar{
+        background-color: white;
+        padding: 20px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+    }
+    .card{
+        background-color: #eee;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .Graph{
+        background-color: white;
+        padding: 20px;
+    }
+    .worldmap{
+        background-color: white;
+        padding: 20px;
+    }
+
+    
+   
+</style>
+<body>
+</body>
+<div class="container">
+    <div class="sidebar">
+        <h2>AdminLTE</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Widgets</li>
+            <li>Layout Options</li>
+            <li>Charts</li>
+            <li>UI Elements</li>
+            <li>Forms</li>
+            <li>Tables</li>
+        </ul>
+    </div>
+    <div class="Header">
+        <h2>Live Preview</h2>
+        <p>Documentation for the AdminLTE dashboard.</p>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="user-profile">
+            <div class="profile-pic">
+                
+            <p>User Name</p>
+        </div>
+        <div class="notifications">
+            <p>Notifications</p>
+        </div>
+        <div class="settings">
+            <p>Settings</p>
+        </div>
+
+    </div>
+    
+    <div class="Mainbar">
+        <h1>Dashboard</h1>
+        <div class="content">
+            <div class="card">
+                <h3>150</h3>
+                <p>New Orders</p>
+                <p>More Info -></p>
+            </div>
+            <div class="card">
+                <h3>53%</h3>
+                <p>Bounce Rate</p>
+                <p>More Info -></p>
+            </div>
+            <div class="card">
+                <h3>44</h3>
+                <p>User Activity</p>
+                <p>More Info -></p>
+            </div>
+            <div class="card">
+                <h3>65</h3>
+                <p>Unique visitors</p>
+                <p>More Info -></p>
+            </div>
+        </div>
+    </div>
+    <div class="Graph">
+        <h2>Graph Section</h2>
+        <p>Graph content goes here.</p>
+        
+
+
+        
+    </div>
+    <div class="worldmap">
+        <h2>World Map</h2>
+        <p>World map content goes here.</p>
+    </div>
+</div>
+
+    
+    
+</body>
+</html>
